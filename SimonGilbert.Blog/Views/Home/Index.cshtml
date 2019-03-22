@@ -1,0 +1,50 @@
+﻿@using SimonGilbert.Blog.ViewModels
+@model UserAccountViewModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="row">
+    <div class="col-6 mx-auto">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4>Create User Account</h4>
+            </div>
+            <div class="panel-body">
+                <form asp-controller="Home" asp-action="Index" method="POST">
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label"></label>
+                        <div>
+                            <input asp-for="FirstName" class="form-control" />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top:10px">
+                        <label asp-for="Username" class="control-label"></label>
+                        <div>
+                            <input asp-for="Username" class="form-control" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top:10px">
+                        <label asp-for="EmailAddress" class="control-label"></label>
+                        <div>
+                            <input asp-for="EmailAddress" class="form-control" />
+                            <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top:10px">
+                        <label asp-for="MobilePhoneNumber" class="control-label"></label>
+                        <div>
+                            <input asp-for="MobilePhoneNumber" class="form-control" />
+                            <span asp-validation-for="MobilePhoneNumber" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top:10px">
+                        <button asp class="btn btn-primary btn-block">Create User Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

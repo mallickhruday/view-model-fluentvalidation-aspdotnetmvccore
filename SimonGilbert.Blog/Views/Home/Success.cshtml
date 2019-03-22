@@ -1,0 +1,23 @@
+﻿@using SimonGilbert.Blog.ViewModels
+@model UserAccountViewModel
+@{
+    ViewData["Title"] = "Success!";
+}
+
+<div class="row">
+    <div class="col-6 mx-auto text-center">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="text-success">Your Valid User Account!</h4>
+            </div>
+            <div class="panel-body">
+                <p>
+                    @Model.FirstName<br />
+                    @Model.Username<br />
+                    @Model.EmailAddress<br />
+                    @Model.MobilePhoneNumber
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
