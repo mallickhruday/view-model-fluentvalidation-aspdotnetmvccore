@@ -10,4 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SimonGilbert.Blog.ViewModels\SimonGilbert.Blog.ViewModels.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="UserAccountValidator.cs" />
+  </ItemGroup>
 </Project>
